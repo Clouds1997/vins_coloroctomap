@@ -1,4 +1,4 @@
-## RGBD-Inertial Trajectory Estimation and Mapping for Small Ground Rescue Robot
+## 具有彩色动态八叉树地图的vins
 Based one open source SLAM framework [VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono).
 
 The approach contains
