@@ -1,14 +1,15 @@
 ## 具有彩色动态八叉树地图的vins
-Based one open source SLAM framework [VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono).
+slam部分请看 SLAM framework [VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono).
+是基于VINS-RGBD这个工程进行修改的 [VINS-RGBD](https://github.com/STAR-Center/VINS-RGBD)
+八叉树地图是根据 dre-slam进行修改的 [dre-slam] (https://github.com/ydsf16/dre_slam)
 
-The approach contains
-+ Depth-integrated visual-inertial initialization process.
-+ Visual-inertial odometry by utilizing depth information while avoiding the limitation is working for 3D pose estimation.
-+ Noise elimination map which is suitable for path planning and navigation.
+总体来说功能：
+（1）定位是用vins-mono的地位
+（2）vins-rgbd 在vins的基础上，对于深度的使用
+（3）dre-slam 的具有回环功能的八叉树地图
 
-However, the proposed approach can also be applied to other application like handheld and wheeled robot.
 
-## 1. Prerequisites
+## 1. Prerequisites（应该还不太全）
 1.1. **Ubuntu** 16.04 or 18.04.
 
 1.2. **ROS** version Kinetic or Melodic fully installation
@@ -23,7 +24,7 @@ Follow [Ceres Installation](http://ceres-solver.org/installation.html)
 ```
 
 
-## 2. Datasets
+## 2. Datasets 
 Recording by RealSense D435i. Contain 9 bags in three different applicaions:
 + [Handheld](https://star-center.shanghaitech.edu.cn/seafile/d/0ea45d1878914077ade5/)
 + [Wheeled robot](https://star-center.shanghaitech.edu.cn/seafile/d/78c0375114854774b521/) ([Jackal](https://www.clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/))
@@ -41,4 +42,3 @@ Topics:
 
 ## 3. Licence
 The source code is released under [GPLv3](http://www.gnu.org/licenses/) license.
-# vins_octomap
