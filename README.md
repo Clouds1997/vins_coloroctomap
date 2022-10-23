@@ -3,6 +3,9 @@ slam部分请看 SLAM framework [VINS-Mono](https://github.com/HKUST-Aerial-Robo
 是基于VINS-RGBD这个工程进行修改的 [VINS-RGBD](https://github.com/STAR-Center/VINS-RGBD)
 八叉树地图是根据 dre-slam进行修改的 [dre-slam] (https://github.com/ydsf16/dre_slam)
 
+demo:
+![contents](./imgs/demo.png)
+
 总体来说功能：
 （1）定位是用vins-mono的地位
 （2）vins-rgbd 在vins的基础上，对于深度的使用
